@@ -1,0 +1,17 @@
+# Jekyll Configuration for HeadX BetterDiscord Website
+title: HeadX BetterDiscord
+description: Galaxy Theme & Plugin Collection für BetterDiscord
+baseurl: ""
+url: "https://headxdev.github.io"
+
+# Build settings
+markdown: kramdown
+exclude:
+  - README.md
+  - .gitignore
+
+# Include static files
+include:
+  - index.html
+  - style.css
+  - script.js
