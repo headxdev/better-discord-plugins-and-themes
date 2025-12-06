@@ -1,0 +1,771 @@
+/**
+ * @name Galaxy Theme - Clean Rounded Enhanced
+ * @description Ein sauberes, abgerundetes Theme für Discord mit transparentem Hintergrund für das Galaxy-Plugin
+ * @author Z2BXN Enhanced
+ * @version 2.0.0
+ * @donate https://paypal.me/
+ * @website https://github.com/
+ * @source https://github.com/
+ * @BDEditor Clear Vision
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Haupt-Farbschema - Enhanced Galaxy Colors */
+  --background-primary: rgba(15, 20, 35, 0.88);
+  --background-secondary: rgba(25, 30, 45, 0.85);
+  --background-secondary-alt: rgba(20, 25, 40, 0.80);
+  --background-tertiary: rgba(10, 15, 30, 0.92);
+  --background-accent: rgba(88, 101, 242, 0.18);
+  --background-floating: rgba(20, 25, 40, 0.96);
+  --background-modifier-hover: rgba(255, 255, 255, 0.08);
+  --background-modifier-active: rgba(255, 255, 255, 0.12);
+  --background-modifier-selected: rgba(88, 101, 242, 0.25);
+  --background-modifier-accent: rgba(88, 101, 242, 0.30);
+  
+  /* Galaxy-inspired accent colors */
+  --galaxy-purple: rgba(147, 51, 234, 0.6);
+  --galaxy-blue: rgba(59, 130, 246, 0.6);
+  --galaxy-cyan: rgba(34, 211, 238, 0.6);
+  --galaxy-pink: rgba(236, 72, 153, 0.6);
+  
+  /* Text-Farben */
+  --text-normal: #dcddde;
+  --text-muted: #a3a6aa;
+  --text-faint: #6a6f77;
+  --text-link: #4fbdff;
+  --text-positive: #43b581;
+  --text-warning: #faa61a;
+  --text-danger: #ed4245;
+  
+  /* Akzent-Farben */
+  --brand-experiment: #5865f2;
+  --brand-experiment-560: #4752c4;
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #dcddde;
+  --interactive-active: #fff;
+  --interactive-muted: #4f545c;
+  
+  /* Spezielle Eigenschaften - Enhanced */
+  --border-radius: 18px;
+  --border-radius-small: 10px;
+  --border-radius-large: 24px;
+  --border-radius-xl: 32px;
+  --shadow-elevation-1: 0 2px 12px rgba(0, 0, 0, 0.25);
+  --shadow-elevation-2: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-elevation-3: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 20px rgba(88, 101, 242, 0.3);
+  --backdrop-blur: blur(16px);
+  --backdrop-blur-strong: blur(24px);
+}
+
+/* Basis-Styling für transparenten Hintergrund - KOMPLETT TRANSPARENT */
+.app-1q1i1E {
+  background: transparent !important;
+}
+
+.bg-h5JY_x {
+  background: transparent !important;
+}
+
+.container-1D34oG {
+  background: transparent !important;
+}
+
+.base-3dtUhz {
+  background: transparent !important;
+}
+
+.container-16j22k {
+  background: transparent !important;
+}
+
+.content-1o0f9g {
+  background: transparent !important;
+}
+
+.chatContent-a9vAAp {
+  background: transparent !important;
+}
+
+.messagesWrapper-3lZDfY {
+  background: transparent !important;
+}
+
+.scrollerInner-2YIMLh {
+  background: transparent !important;
+}
+
+.scroller-2FKFPG {
+  background: transparent !important;
+}
+
+.messageListItem-1-AK_M {
+  background: transparent !important;
+}
+
+/* Alle möglichen Chat-Container transparent machen */
+.content-98HsJk .chat-3bRxxu,
+.content-98HsJk .chatContent-a9vAAp,
+.content-98HsJk .messagesWrapper-3lZDfY,
+.content-98HsJk .scrollerInner-2YIMLh,
+.content-98HsJk .scroller-2FKFPG {
+  background: transparent !important;
+}
+
+/* Discord's neueste Container */
+.theme-dark,
+.theme-light {
+  --background-primary: transparent !important;
+  --background-secondary: transparent !important;
+  --background-secondary-alt: transparent !important;
+  --background-tertiary: transparent !important;
+  --background-accent: transparent !important;
+  --background-floating: rgba(20, 25, 40, 0.96) !important;
+}
+
+/* Hauptbereiche mit Glasmorphismus-Effekt */
+.sidebar-2K8pFh {
+  background: var(--background-secondary) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  box-shadow: var(--shadow-elevation-2);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.content-98HsJk {
+  background: var(--background-primary) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  margin: 8px 8px 8px 0;
+  box-shadow: var(--shadow-elevation-1);
+}
+
+.chat-3bRxxu {
+  background: transparent !important;
+  border-radius: var(--border-radius);
+}
+
+/* Server-Liste */
+.guilds-1SWlCJ {
+  background: var(--background-tertiary) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  padding: 8px;
+  box-shadow: var(--shadow-elevation-2);
+}
+
+.wrapper-25eVIn {
+  border-radius: var(--border-radius) !important;
+  transition: all 0.3s ease;
+}
+
+.wrapper-25eVIn:hover {
+  border-radius: var(--border-radius-small) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elevation-1);
+}
+
+/* Kanäle */
+.container-3w7J-x {
+  background: transparent !important;
+}
+
+.clickable-1JJAn8 {
+  border-radius: var(--border-radius-small) !important;
+  margin: 2px 8px;
+  transition: all 0.2s ease;
+}
+
+.clickable-1JJAn8:hover {
+  background: var(--background-modifier-hover) !important;
+  transform: translateX(4px);
+}
+
+.modeSelected-1zApJ_ {
+  background: var(--background-modifier-selected) !important;
+  border-left: 3px solid var(--brand-experiment);
+}
+
+/* Nachrichten */
+.message-2qnXI6 {
+  background: transparent !important;
+  border-radius: var(--border-radius-small);
+  margin: 4px 16px;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+}
+
+.message-2qnXI6:hover {
+  background: var(--background-modifier-hover) !important;
+  transform: translateX(2px);
+  box-shadow: var(--shadow-elevation-1);
+}
+
+.messageContent-2qWWxC {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+/* Eingabefield */
+.scrollableContainer-2NUZem {
+  background: var(--background-secondary) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: var(--border-radius-large) !important;
+  margin: 16px;
+  box-shadow: var(--shadow-elevation-2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.scrollableContainer-2NUZem:focus-within {
+  border-color: var(--brand-experiment);
+  box-shadow: 0 0 0 2px rgba(88, 101, 242, 0.3);
+}
+
+/* Mitgliederliste */
+.members-1998pB {
+  background: var(--background-secondary) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  margin: 8px 8px 8px 0;
+  box-shadow: var(--shadow-elevation-1);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.member-3-YXUe {
+  border-radius: var(--border-radius-small) !important;
+  margin: 2px 8px;
+  transition: all 0.2s ease;
+}
+
+.member-3-YXUe:hover {
+  background: var(--background-modifier-hover) !important;
+  transform: translateX(-4px);
+}
+
+/* Popups und Modals */
+.modal-yWgWj- {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: var(--border-radius-large) !important;
+  box-shadow: var(--shadow-elevation-3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-1TKi98 {
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+}
+
+/* Buttons */
+.button-38aScr {
+  border-radius: var(--border-radius-small) !important;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.button-38aScr:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-elevation-1);
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+  background: linear-gradient(135deg, var(--brand-experiment), #4752c4) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Benutzerpanel */
+.panels-j1Uci_ {
+  background: var(--background-tertiary) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.container-3baos1 {
+  background: var(--background-modifier-hover) !important;
+  border-radius: var(--border-radius-small);
+  margin: 8px;
+  transition: all 0.2s ease;
+}
+
+.container-3baos1:hover {
+  background: var(--background-modifier-active) !important;
+  transform: scale(1.02);
+}
+
+/* Voice-Chat */
+.wrapper-2qzCYF {
+  background: var(--background-accent) !important;
+  border-radius: var(--border-radius-small);
+  border: 1px solid rgba(88, 101, 242, 0.3);
+}
+
+/* Emoji und Reactions */
+.reaction-1hd86g {
+  background: var(--background-modifier-hover) !important;
+  border-radius: var(--border-radius-small) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+}
+
+.reaction-1hd86g:hover {
+  background: var(--background-modifier-active) !important;
+  transform: scale(1.05);
+}
+
+/* Statusanzeigen */
+.status-1fhblQ {
+  border: 2px solid var(--background-primary) !important;
+  border-radius: 50% !important;
+}
+
+/* Animationen */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-2qnXI6 {
+  animation: fadeInUp 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar-2K8pFh {
+    border-radius: 0;
+  }
+  
+  .content-98HsJk {
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  .members-1998pB {
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+/* Spezielle Effekte für Galaxy Theme */
+.typeWindows-1za-n7 {
+  background: transparent !important;
+}
+
+.winButton-iRh8-Z {
+  border-radius: var(--border-radius-small) !important;
+  transition: all 0.2s ease;
+}
+
+.winButton-iRh8-Z:hover {
+  background: var(--background-modifier-hover) !important;
+  transform: scale(1.1);
+}
+
+/* Zusätzliche Glasmorphismus-Effekte */
+.layer-3QrUeG {
+  backdrop-filter: var(--backdrop-blur);
+}
+
+.container-1giJp5 {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: var(--border-radius) !important;
+  box-shadow: var(--shadow-elevation-2);
+}
+
+/* Verbesserte Transparenz für Galaxy-Hintergrund */
+.app-1q1i1E .bg-h5JY_x,
+.app-1q1i1E .container-1D34oG,
+.app-1q1i1E .base-3dtUhz {
+  background: transparent !important;
+}
+
+/* Sicherstellen, dass der Galaxy-Canvas sichtbar bleibt */
+#galaxy-bg {
+  z-index: -1 !important;
+}
+
+/* ================== Plugin-Kompatibilitäts-Sektion ================== */
+
+/* SpotifyControls Kompatibilität */
+.panels-j1Uci_ .container-3baos1 {
+  background: rgba(20, 25, 40, 0.9) !important;
+  backdrop-filter: var(--backdrop-blur) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+/* MessageLoggerV2 Kompatibilität - Gelöschte/Bearbeitete Nachrichten */
+.messagelogger-deleted {
+  background: rgba(237, 66, 69, 0.15) !important;
+  border-left: 3px solid #ed4245 !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+.messagelogger-edited {
+  background: rgba(250, 166, 26, 0.15) !important;
+  border-left: 3px solid #faa61a !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+/* BetterFolders & ServerFolders Kompatibilität */
+.betterFolders-customIcon,
+.folder-icon-custom {
+  filter: drop-shadow(0 0 8px var(--brand-experiment)) !important;
+}
+
+._serverfoldersfoldercontent_,
+.foldercontent {
+  background: var(--background-secondary) !important;
+  backdrop-filter: var(--backdrop-blur) !important;
+}
+
+/* MoreRoleColors Kompatibilität */
+.roleColor-gradient {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* VoiceActivity Plugin */
+.voiceActivity {
+  background: var(--background-modifier-hover) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+/* ShowHiddenChannels Kompatibilität */
+.shc-hidden-channel {
+  opacity: 0.6;
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+/* CharCounter Plugin */
+.char-counter {
+  color: var(--text-muted) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* PingNotification Plugin */
+.ping-notification {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur-strong) !important;
+  border-radius: var(--border-radius) !important;
+  box-shadow: var(--shadow-elevation-3), var(--shadow-glow) !important;
+}
+
+/* Timezones Plugin */
+.timezone-display {
+  color: var(--text-muted) !important;
+  font-size: 0.75rem !important;
+}
+
+/* APlatformIndicators Plugin */
+.platform-indicator {
+  filter: drop-shadow(0 0 4px rgba(67, 181, 129, 0.5));
+}
+
+/* FriendNotifications Plugin */
+.friend-notification {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur) !important;
+  border-radius: var(--border-radius) !important;
+}
+
+/* Finale Anpassungen für perfekte Integration */
+.theme-dark {
+  --background-primary: rgba(15, 20, 35, 0.88) !important;
+  --background-secondary: rgba(25, 30, 45, 0.85) !important;
+  --background-secondary-alt: rgba(20, 25, 40, 0.80) !important;
+  --background-tertiary: rgba(10, 15, 30, 0.92) !important;
+}
+
+/* Enhanced Galaxy Integration */
+.app-1q1i1E::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(88, 101, 242, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Improved Server Icons */
+.wrapper-25eVIn .svg-1X37T1 {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wrapper-25eVIn:hover .svg-1X37T1 {
+  filter: drop-shadow(0 0 8px var(--brand-experiment));
+}
+
+/* Enhanced Message Styling */
+.message-2qnXI6::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: linear-gradient(90deg, var(--brand-experiment), var(--galaxy-purple));
+  transition: width 0.3s ease;
+  border-radius: var(--border-radius-small) 0 0 var(--border-radius-small);
+}
+
+.message-2qnXI6:hover::before {
+  width: 3px;
+}
+
+/* Beautiful Channel List */
+.containerDefault-YUSmu3:hover {
+  background: linear-gradient(90deg, var(--background-modifier-hover), transparent) !important;
+  border-left: 2px solid var(--galaxy-cyan);
+  padding-left: 6px;
+}
+
+/* Enhanced User Panel */
+.container-3baos1 {
+  background: linear-gradient(135deg, var(--background-modifier-hover), var(--background-accent)) !important;
+  backdrop-filter: var(--backdrop-blur-strong);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.container-3baos1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.container-3baos1:hover::before {
+  left: 100%;
+}
+
+/* Galaxy-themed Tooltips */
+.tooltip-2QfLtc {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur-strong);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-small) !important;
+  box-shadow: var(--shadow-elevation-3), var(--shadow-glow);
+}
+
+/* Enhanced Emoji Picker */
+.contentWrapper-SvZHNd {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur-strong);
+  border-radius: var(--border-radius-large) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-elevation-3);
+}
+
+/* Improved Context Menus */
+.menu-3sdvDG {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur-strong);
+  border-radius: var(--border-radius) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-elevation-3), var(--shadow-glow);
+}
+
+.item-1tOPte:hover {
+  background: linear-gradient(90deg, var(--background-modifier-hover), var(--galaxy-purple)) !important;
+  border-radius: var(--border-radius-small);
+  transform: translateX(2px);
+}
+
+/* Enhanced Search Bar */
+.searchBar-3dMhjb {
+  background: var(--background-secondary) !important;
+  backdrop-filter: var(--backdrop-blur);
+  border-radius: var(--border-radius-large) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.searchBar-3dMhjb:focus-within {
+  border-color: var(--brand-experiment);
+  box-shadow: var(--shadow-glow);
+  transform: scale(1.02);
+}
+
+/* ================== ERWEITERTE PLUGIN-KOMPATIBILITÄT ================== */
+
+/* CallTimeCounter & AllCallTimeCounter Plugin */
+.call-time-counter, .call-timer {
+  background: rgba(20, 25, 40, 0.85) !important;
+  backdrop-filter: var(--backdrop-blur) !important;
+  border-radius: var(--border-radius-small) !important;
+  padding: 4px 8px !important;
+  color: var(--text-normal) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* BetterVolume Plugin */
+.volume-slider-wrapper {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+/* CustomStatusPresets Plugin */
+.status-preset {
+  background: var(--background-modifier-hover) !important;
+  border-radius: var(--border-radius-small) !important;
+  transition: all 0.2s ease !important;
+}
+
+.status-preset:hover {
+  background: var(--background-modifier-active) !important;
+  transform: translateX(4px);
+}
+
+/* GameActivityToggle Plugin */
+.game-activity-toggle {
+  background: var(--background-modifier-hover) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+/* InMyVoice Plugin */
+.in-my-voice-container {
+  background: rgba(20, 25, 40, 0.9) !important;
+  backdrop-filter: var(--backdrop-blur) !important;
+  border-radius: var(--border-radius) !important;
+}
+
+/* PasscodeLock Plugin */
+.passcode-lock-overlay {
+  background: rgba(10, 15, 30, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+.passcode-input {
+  background: var(--background-secondary) !important;
+  border-radius: var(--border-radius-small) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ServerDetails Plugin */
+.server-details-modal {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur-strong) !important;
+  border-radius: var(--border-radius-large) !important;
+}
+
+/* ShowConnections Plugin */
+.connections-container {
+  background: var(--background-modifier-hover) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+/* SplitLargeMessages Plugin */
+.split-message-indicator {
+  color: var(--text-muted) !important;
+  font-size: 0.75rem !important;
+}
+
+/* Translator Plugin */
+.translator-button {
+  background: var(--background-modifier-hover) !important;
+  border-radius: var(--border-radius-small) !important;
+  transition: all 0.2s ease !important;
+}
+
+.translator-button:hover {
+  background: var(--background-modifier-active) !important;
+  transform: scale(1.05);
+}
+
+/* StickerSnatcher Plugin */
+.sticker-snatcher-button {
+  background: var(--background-modifier-hover) !important;
+  border-radius: 50% !important;
+  transition: all 0.2s ease !important;
+}
+
+.sticker-snatcher-button:hover {
+  background: var(--brand-experiment) !important;
+  transform: scale(1.1);
+}
+
+/* NotifyWhenMuted Plugin */
+.muted-notification {
+  background: rgba(237, 66, 69, 0.9) !important;
+  backdrop-filter: var(--backdrop-blur) !important;
+  border-radius: var(--border-radius) !important;
+}
+
+/* AutoIdleOnAFK Plugin */
+.auto-idle-indicator {
+  color: var(--text-warning) !important;
+}
+
+/* DoubleClickToEdit Plugin - keine visuelle Änderung nötig */
+
+/* MentionFix Plugin - keine visuelle Änderung nötig */
+
+/* OpenSteamLinksInApp Plugin - keine visuelle Änderung nötig */
+
+/* SendStickersAsLinks Plugin - keine visuelle Änderung nötig */
+
+/* BetterChatNames Plugin */
+.better-chat-name {
+  color: var(--text-normal) !important;
+}
+
+/* ShowSpectators Plugin */
+.spectators-list {
+  background: var(--background-floating) !important;
+  backdrop-filter: var(--backdrop-blur) !important;
+  border-radius: var(--border-radius-small) !important;
+}
+
+/* ================== THEME ZUSAMMENARBEIT ================== */
+
+/* Midnight Theme Variablen-Brücke */
+:root {
+  --midnight-compat-bg: var(--background-primary, rgba(15, 20, 35, 0.88));
+  --midnight-compat-text: var(--text-normal, #dcddde);
+}
+
+/* EmojiReplace Theme Kompatibilität */
+.emoji, .emojiContainer {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* AkameGaKill Theme - Farb-Brücke für rote Akzente */
+.akame-accent {
+  --accent-color: #9b2742;
+}
